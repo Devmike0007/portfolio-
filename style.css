@@ -106,7 +106,6 @@ img{
     width: 40%;
     height: 100%;
     min-width: 00px;
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     overflow: hidden;
