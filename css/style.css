@@ -1,0 +1,690 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #000000;
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+h1 span{
+    color: #ffb700;
+}
+.invisible{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+ul a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+ul a i{
+    color: #ffb700;
+}
+ul li{
+    font-size: 10px;
+}
+
+
+main{
+    margin-top: 60px;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.banniere{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banniere .droite{
+    width: 50%;
+    height: 100%;
+}
+img{
+    margin: auto;
+    height: 100%;
+}
+
+.banniere .gauche{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.banniere .gauche p span{
+    width: 60%;
+    font-size: 25px;
+}
+.banniere .gauche h1{
+    color: #ffb700;
+    font-size: 60px;
+}
+.banniere .gauche h2{
+    font-size: 30px;
+}
+.banniere .gauche p{
+    font-size: 25px;
+    width: 70%;
+}
+.apropos{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap ;
+}
+.apropos .droite{
+    width: 40%;
+    height: 100%;
+    min-width: 00px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.apropos .droite img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.apropos .gauche{                                                                             
+    width: 55%;
+    height: 100%;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    text-align: justify;
+}
+.apropos .gauche h1{
+    margin-bottom: 2Opx;
+    color: #ffb700;
+    font-size: 40px;
+
+}
+.apropos .gauche p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.services{
+    width: 100%;
+    background-color: #ffb700;
+    padding: 20px;
+
+}
+.services h1{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    text-align: left;
+}
+.services .conteneur{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.services .conteneur .service{
+    height: 350px;
+    width: 400px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.781);
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.489);
+    overflow: hidden;
+}
+.services .conteneur .service .icon{
+    height: 50px;
+    width: 50px;
+}
+.services .conteneur .service ul{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    font-size: 15px;
+    padding: 0;
+}
+.temoignage{
+    width: 100%;
+    height: 400px;
+    color: #000000;
+
+}
+.temoignage h1{
+    text-align: center;
+    font-size: 40px;
+    color: #ffb700;
+    text-align: left;
+}
+.temoignage .conteneur{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 15px;
+}
+.block{
+    height: 230px;
+    width: 500px;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.489);
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.phots{
+    height: 50px;
+    width: 50px;
+}
+.pht{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*temoignage fin*/
+
+.contact{
+    width: 100%;
+    background-color: #ffb700;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.contact .gauche{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.contact .gauche .info{
+    color: #000000;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+}
+.contact .gauche .info a{
+    text-decoration: none;
+    color: #000000;
+}
+.contact .gauche .info :hover{
+    color: #ffffff;
+}
+.contact .droite{
+    width: 50%;
+}
+.contact .droite p{
+    font-size: 40px;
+    color: #000000;
+
+}
+.contact .droite span{
+    font-size: 20px;
+
+}
+.contact .droite h2{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.contact .droite form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact .droite form .input{
+    display: flex;
+    gap: 10px;
+}
+.contact .droite form .input input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.contact .droite form .input textarea{
+    width: 100%;
+    padding: 10px;
+}
+.contact .droite form button{
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.contact .droite form button:hover{
+    background-color: #ffb700;
+    color: #000000;
+}
+.contact .droite form button:active{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+marquee{
+    height: 50px;
+}
+marquee img{
+    height: 100%;
+    width: 50px;
+    object-fit: cover;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Responsive : tablettes et moins */
+  @media screen and (max-width: 1024px) {
+    .invisible{
+    text-decoration: none;
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    color: #ffb700;
+
+}
+.invisible i{
+    color: #ffb700;
+}
+    nav ul{
+        display: none;
+    }
+    
+main{
+    padding: 20px;
+    gap: 0px;
+}
+
+.banniere{
+    width: 100%;
+
+}
+.banniere .droite{
+    width: 100px ;
+    height: 0%;
+}
+.banniere .droite img{
+   display: none;
+}
+
+.banniere .gauche{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.apropos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.apropos .droite{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.apropos .droite img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.apropos .gauche{ 
+    height: auto;                                                                            
+    width: 100%;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    text-align: justify;
+}
+.services{
+    width: 100%;
+    background-color: #ffb700;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+.services .conteneur{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+.temoignage{
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+    color: #000000;
+
+}
+.temoignage h1{
+    text-align: center;
+    font-size: 40px;
+    color: #ffb700;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.temoignage .conteneur{
+
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 15px;
+}
+.block{
+    height: 250px;
+    width: 90%;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    gap: 20px;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.489);
+}
+.contact{
+    width: 100%;
+    background-color: #ffb700;
+    padding: 20px;
+}
+.contact .droite{
+    width: 40%;
+}
+
+  }
+  
+  /* Pour les petits téléphones */
+  @media screen and (max-width: 480px) {
+        
+main{
+    padding: 20px;
+    gap: 0px;
+}
+
+.banniere{
+    width: 100%;
+
+}
+.banniere .droite{
+    width: 0px ;
+    height: 0%;
+}
+.banniere .droite img{
+   display: none;
+}
+
+.banniere .gauche{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+
+    gap: 10px;
+}
+.banniere .gauche h1{
+
+    width: 100%;
+}
+.banniere .gauche p{
+    width: 100%;
+}
+.apropos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.apropos .droite{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.apropos .droite img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.apropos .gauche{ 
+    height: auto;                                                                            
+    width: 100%;
+    background-color: #000000;
+    background-size: cover;
+    font-size: 20px;
+    background-position: center;
+    text-align: justify;
+}
+.services{
+    width: 100%;
+    background-color: #ffb700;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+.services .conteneur{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+.temoignage{
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+    color: #000000;
+
+}
+.temoignage h1{
+    text-align: center;
+    font-size: 40px;
+    color: #ffb700;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.temoignage .conteneur{
+
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 15px;
+}
+.block{
+    height: auto;
+    width: 90%;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    gap: 20px;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.489);
+}
+.block p{
+    font-size: 10px;
+}
+.avatar .name{
+    font-size: 10px;
+}
+
+.contact{
+    background-color: #ffb700;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.contact .gauche{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.contact .gauche .info{
+    color: #000000;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+
+    gap: 10px;
+}
+.contact .gauche .info a{
+    text-decoration: none;
+    color: #000000;
+}
+.contact .gauche .info :hover{
+    color: #ffffff;
+}
+.contact .droite{
+    width: 100%;
+}
+.contact .droite p{
+    font-size: 40px;
+    color: #000000;
+
+}
+.contact .droite span{
+    font-size: 20px;
+
+}
+.contact .droite h2{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.contact .droite form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact .droite form .input{
+    display: flex;
+    gap: 10px;
+}
+.contact .droite form .input input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.contact .droite form .input textarea{
+    width: 100%;
+    padding: 10px;
+}
+.contact .droite form button{
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.contact .droite form button:hover{
+    background-color: #ffb700;
+    color: #000000;
+}
+.contact .droite form button:active{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+  
+  }
+  

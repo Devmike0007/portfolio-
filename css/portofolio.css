@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #000000;
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+h1 span{
+    color: #ffb700;
+}
+.invisible{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+ul a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+ul a i{
+    color: #ffb700;
+}
+ul li{
+    font-size: 10px;
+}
+main{
+    margin-top: 80px;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    gap: 40px;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.conteneur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  
+}
+.carte{
+    width: 400px;
+    height: 450px;
+    padding: 15px 25px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.164);
+}
+.photo{
+    display: flex;
+    height: 200px; 
+    overflow: hidden;
+    justify-content: center;
+}
+.photo img{
+    width: 100%;
+    
+}
+.texte{
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: justify; 
+}
+.texte h2{
+    margin-left: 10px; 
+}
+.texte a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.texte a:hover{
+    color: #ffb700;
+    text-decoration: none;
+}
+.bureautique{
+    padding: 20px;
+    background-color: #ffb70048;
+}
+.n{
+    box-shadow: none;
+    border: solid 1px white;
+}
+@media screen and (max-width: 1024px) {
+    .invisible{
+    text-decoration: none;
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    color: #ffb700;
+
+}
+.invisible i{
+    color: #ffb700;
+}
+    nav ul{
+        display: none;
+    }
+    
+    
+main{
+    padding: 20px;
+    gap: 20px;
+}
+
+.conteneur{
+    width: 100%;
+
+}
+
+  }
+  
+  /* Pour les petits téléphones */
+  @media screen and (max-width: 480px) {
+        
+main{
+    padding: 20px;
+    gap: 0px;
+}
+
+  
+  }
+  
