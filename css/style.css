@@ -461,7 +461,7 @@ main{
     gap: 15px;
 }
 .block{
-    height: 250px;
+    height: auto;
     width: 90%;
     padding: 30px;
     background-color: white;
