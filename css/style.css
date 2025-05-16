@@ -358,6 +358,7 @@ footer{
     }
     
 main{
+    width: 100vh;
     padding: 20px;
     gap: 0px;
 }
