@@ -21,7 +21,7 @@
             <ul>
                 
                 <li><a href="cv.pdf" class="cv" download><i class="fa-solid fa-download"></i> Télécharger le CV</a></li>
-                <li><a href="portofolio.html" class="cv"><i class="fa-solid fa-briefcase"></i> Portofolio</a></li>
+                <li><a href="portofolio.php" class="cv"><i class="fa-solid fa-briefcase"></i> Portofolio</a></li>
 
             </ul>
             <div class="invisible">
@@ -204,15 +204,15 @@
                         de vos études de cas et de vos produits avec les vidéos de marque.
                         Les clients reviennent pour des services. Faites de votre mieux.</span></p>
                 </div>
-                <form action="./PHPMailer/sendemail.php" method="post">
+                <form action="traitement.php" method="post">
                     <div class="input">
-                        <input type="text" name="Nom" id="Nom" placeholder="Nom" required>
-                        <input type="email" name="Email" id="Email" placeholder="Email" required>
+                        <input type="text" name="nom" id="Nom" placeholder="Nom" required>
+                        <input type="email" name="email" id="Email" placeholder="Email" required>
                     </div>
                     <div class="input">
-                        <textarea name="texte" id="texte" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea name="message" id="texte" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit" name="envoyer">Envoyer</button>
                 </form>
             </div>
             <div class="gauche">

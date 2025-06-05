@@ -18,7 +18,7 @@
                 <li><a href="#temoignage"><span class="positon1">Design</span> <span class="positon2">Graphique</span></a></li>    
             </ul>
             <ul>
-                <li><a href="index.html" class="cv"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="index.php" class="cv"><i class="fas fa-home"></i> Accueil</a></li>
                 <li><a href="cv.pdf" class="cv" download><i class="fa-solid fa-download"></i> Télécharger le CV</a></li>
                
             </ul>

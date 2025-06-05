@@ -24,17 +24,17 @@ try {
     $mail->CharSet = 'UTF-8';
 
     // Expéditeur et destinataire
-    $mail->setFrom('espoircompagnie0001@gmail.com', 'Michee');
-    $mail->addAddress($_POST['email'], $_POST['prenom'].' '.$_POST['nom']);
+    $mail->setFrom($_POST['email'], $_POST['nom']);
+    $mail->addAddress('devmike0002@gmail.com', 'Dev Mike'); // Adresse du destinataire
 
     // Contenu
     $mail->isHTML(true);
-    $mail->Subject = 'Confirmation d\'email';
-    $mail->Body = 'Afin de valider votre adresse email, merci de cliqquer sur le lien suivant : <a href="localhost/webcms/verification.php?token='.$token.'&email='.$_POST['email'].'">Confirmer votre email</a>';
+    $mail->Subject = 'Colaboration avec Dev Mike';
+    $mail->Body = $_POST['message'];
 
     // Envoi
     $mail->send();
-    echo '✅ Un mail vous a été envoyé pour la creation de votre compte.';
+    echo '✅ Merci d\'avoir envoyer un email.';
 } catch (Exception $e) {
     echo '❌ Erreur lors de l\'envoi : ' . $mail->ErrorInfo;
 }
