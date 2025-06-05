@@ -319,14 +319,14 @@ img{
 .contact{
     width: 100%;
     background-color: #ffb700;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
 }
 .contact .gauche{
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
